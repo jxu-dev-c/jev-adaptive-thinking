@@ -92,8 +92,6 @@ JSON 在 `plugin.register` / `plugin.reconfigure` 时读取。修改 JSON 文件
 $HOME/.local/state/jev-adaptive-thinking/logs/router.jsonl
 ```
 
-Jason 当前机器对应：
-`/Users/jasonxu/.local/state/jev-adaptive-thinking/logs/router.jsonl`。
 首次初始化时自动创建日志目录；目录权限 `0700`，文件权限 `0600`。
 每条事件立即追加写入，10 MiB 轮转，保留 `.1` 到 `.5` 共五个历史文件。
 并发写入在进程内串行化，不逐条 fsync。

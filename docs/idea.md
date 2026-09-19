@@ -9,14 +9,12 @@
 `gpt-5.6-sol`
 `gpt-5.6-astra`
 
-cliproxyapi相关文档:
-```bash
-ntn pages get 3df4257d-2a6d-814b-91c3-d34c13ab2297
-```
+cliproxyapi相关文档：
+[官方插件示例](https://github.com/router-for-me/CLIProxyAPI/tree/v7.3.8/examples/plugin)
 
 jev openrouter model id:
 `typesafe/jev-1.13`
-my open router key: `OPEN_ROUTER_API_KEY`
+OpenRouter API key 环境变量：`OPEN_ROUTER_API_KEY`
 example code:
 
 ```ts
