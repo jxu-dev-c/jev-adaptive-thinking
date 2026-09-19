@@ -1,0 +1,25 @@
+{
+  "jev_model": "typesafe/jev-1.13",
+  "timeout_ms": 1500,
+  "fallback": "standard",
+  "candidates": [
+    {
+      "key": "simple",
+      "provider": "replace_with_deepseek_provider",
+      "model": "deepseek-v4-flash:deepseek",
+      "description": "Lowest cost: simple questions, extraction, rewriting, and small clearly specified code changes."
+    },
+    {
+      "key": "standard",
+      "provider": "replace_with_sol_provider",
+      "model": "gpt-5.6-sol",
+      "description": "Balanced: routine software development, ordinary debugging, and moderately complex multi-step tasks. Default for ambiguous ordinary tasks."
+    },
+    {
+      "key": "complex",
+      "provider": "replace_with_astra_provider",
+      "model": "gpt-5.6-astra",
+      "description": "Highest capability: difficult reasoning, architectural design, deep debugging, and highly complex tasks."
+    }
+  ]
+}
